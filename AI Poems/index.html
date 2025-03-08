@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+    <title>AI Poem GENERATOR</title>
+  </head>
+  <link rel="stylesheet" href="src/style.css" />
+  <body>
+    <div class="container">
+      <header>
+        <h1>AI Poema De Amor</h1>
+      </header>
+      <main>
+        <div class="form-wrapper">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              class="prompt"
+              id="user-word"
+            />
+            <input type="submit" class="button" />
+          </form>
+          <small>p.ej. flor, sol, primavera...</small>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+      <footer>
+        Este proyecto está codificado por Nosipho Hlongwane y es de código abierto en
+        <a href="https://github.com/NosiphoHlongwane1/SheCodes-AI-Generator" target="_blank"
+        >Github</a
+        >
+      </footer>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
